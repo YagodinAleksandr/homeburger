@@ -14,12 +14,14 @@
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../../css/portfolio-item.css" rel="stylesheet">
-
+    <link href="../../css/shop-item.css" rel="stylesheet">
+    <link href="../../css/upcss.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <script src="../../css/upjs.js"></script>
   </head>
 
   <body>
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Вгору</button>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -29,24 +31,59 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="../../index.html">Предзаказ
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Заказ на дом(Soon)</a>
-            </li>
+         <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+      Контакты
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li align="center"><a href="#">E-mail</a></li>
+      <li align="center"><a href="#">Instagram</a></li>
+      <li align="center"><a href="#">Facebook</a></li>
+      <li align="center"><a>050-645-16-17</a></li>
+      <li align="center"><a>050-645-16-17</a></li>
+    </ul>
+  </li>
+
           </ul>
         </div>
       </div>
     </nav>
 
+
     <!-- Page Content -->
-    <div class="container">
+      <div class="container">
+      <nav class="navbar navbar-light bg-white">
+    <form class="form-inline">
+      <div class="btn-group">
+    <a class="btn btn-primary" href="../../index.html" role="button">Предзаказ</a>
+    <button button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Заказ на дом(Soon)</button>
+     </div>
+    </form>
+    </nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">В разработке</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Может занять нокоторое время. Но вы держитесь.
+     </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <!-- Portfolio Item Heading -->
-      <h1 class="my-4">FLORIDA MENU
+      <h1 class="my-4">NEW YORK MENU
         <small></small>
       </h1>
 
@@ -58,7 +95,9 @@
         </div>
 
         <div class="col-md-4">
-          <h3 class="my-3">155 грн.</h3>
+          <h3 class="my-3">144 грн.</h3>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Замовити</button>
+
           <h3 class="my-3">Опис</h3>
           <ul>
             Описание
@@ -67,43 +106,43 @@
 
       </div>
       <!-- /.row -->
-
+    
       <!-- Related Projects Row -->
       <h3 class="my-4">Соусы</h3>
 
       <div class="row">
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMsalat/caesar.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMsalat/mustard.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMsalat/mushroom.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMsalat/tartar.jpg" alt="">
           </a>
         </div>
 
-         <div class="col-md-3 col-sm-6 mb-4">
+         <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMsalat/bbq.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMsalat/ketchup.jpg" alt="">
           </a>
@@ -114,91 +153,91 @@
 
       <div class="row">
 
-<div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/cocacola.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/pepsi.jpg"" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/fanta.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/sprite.jpg" alt="">
           </a>
         </div>
 
-         <div class="col-md-3 col-sm-6 mb-4">
+         <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/water.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/cowberrytea.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/curranttea.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/blacktea.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/seathorntea.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/alptea.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/latte.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/espresso.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/americano.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/capuccinno.jpg" alt="">
           </a>
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
+        <div class="col-md-3 col-sm-6 mb-3">
           <a href="#">
             <img class="img-fluid" src="../../img/BMdrink/juice.jpg" alt="">
           </a>
@@ -211,20 +250,29 @@
 
       </div>
 
+      </div>
+     <ul class="pagination justify-content-center">
+        <li class="page-item" style="margin: 0px 0px 33px 0px;">
+        </li>
+      </ul>
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+
+    <div id="footer">
+    <footer class="py-3 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
       </div>
       <!-- /.container -->
     </footer>
+    </div>
+
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 
