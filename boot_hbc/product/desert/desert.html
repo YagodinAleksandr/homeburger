@@ -15,169 +15,137 @@
 
     <!-- Custom styles for this template -->
     <link href="../../css/4-col-portfolio.css" rel="stylesheet">
-
+    <link href="../../css/upcss.css" rel="stylesheet">
+    <link href="../../css/shop-drop.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <script src="../../css/upjs.js"></script>
   </head>
 
   <body>
-
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Вгору</button>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Home Burger Cafe</a>
+       <!-- <img src="img/head2.jpeg" alt="">-->
+       <a href="../../index.html" class="navbar-brand"><img width="35" src="../../img/logo.png"></a> <!--Поставить своё лого 35х35 -->
+        <a class="navbar-brand" href="../../index.html">Home Burger Cafe</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Предзаказ
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Заказ на дом(Soon)</a>
-            </li>
+ <a href="#" class="navbar-right"><img width="35" src="../../img/cart.png"></a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" class="dropdown-toggle nav-link active">
+      Контакти    
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">     
+      <li align="center"><a href="https://www.instagram.com/home_best_burger_cafe/">Instagram</a></li>
+      <li align="center"><a href="https://www.facebook.com/HomeBurgerCafe/">Facebook</a></li>
+      <li align="center"><a>homeburgcafe@gmail.com</a></li>
+      <li align="center"><a>+38(068)339-81-20</a></li>      
+    </ul>
+  </li>
+
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+         </ul>
+
+        </div>
         </div>
       </div>
     </nav>
 
     <!-- Page Content -->
     <div class="container">
+      <nav class="navbar navbar-light bg-white">
+    <form class="form-inline">
+      <div class="btn-group">
+    <a class="btn btn-primary" href="../../index.html" role="button">Передзамовлення</a>
+    <button button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Доставка додому(Soon)</button>
+     </div>
+    </form>
+    </nav>
 
-      <!-- Page Heading -->
-      <h1 class="my-4">Menu
-        <small>Page 1</small>
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">В розробці</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Скоро
+     </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Закрити</button>
+      </div>
+    </div>
+  </div>
+</div>і
+
+      <!-- Portfolio Item Heading -->
+      <h1 class="my-4">NEW YORK MENU
+        <small></small>
       </h1>
 
+      <!-- Portfolio Item Row -->
       <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="product.html">Burger menu</a>
-              </h4>
-              <p class="card-text">Pack of Burger and some thing alse</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Бургеры</a>
-              </h4>
-              <p class="card-text">Бургеры</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Картошка фри</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Супы</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Паста</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Салаты</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Соусы</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Десерты</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci dicta dignissimos neque animi ea, veritatis, provident hic consequatur ut esse! Commodi ea consequatur accusantium, beatae qui deserunt tenetur ipsa.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.row -->
 
-      <!-- Pagination -->
-      <ul class="pagination justify-content-center">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="page2.html">2</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="page2.html" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
+        <div class="col-md-8">
+          <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="my-3">144 грн.</h3>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Замовити</button>
+
+          <h3 class="my-3">Опис</h3>
+          <ul>
+              Опис
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- /.row -->
+    
+      <!-- Related Projects Row -->
+      
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+      </div>
+
+      </div>
+     <ul class="pagination justify-content-center">
+        <li class="page-item" style="margin: 0px 0px 33px 0px;">
         </li>
       </ul>
-
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+
+    <div id="footer">
+    <footer class="py-3 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
       </div>
       <!-- /.container -->
     </footer>
+    </div>
+
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 
